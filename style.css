@@ -1,8 +1,39 @@
+:root {
+    --primary-text-color: #757575 ;
+    --title-text-color: #212121 ;
+    --accent-color: #2196F3
+}
+.body {
+color: #757575
+background color: #FFFFFF ;
+ }
+ .logo-web {
+     color:#2196F3
+ }
+ .logo-studio {
+      color: #000000
+ }
+ .site-nav .list {
+     color: #212121
+ }
+ .site-nav .link:hover,
+ .site-nav .link:focus {
+     color: #2196F3
+ }
+ .section-title {
+     color:#212121
+ }
+ .section {
+     color:#757575
+ }
+.features-list .title {
+    color: #212121
+}
   /*цвет Web */  #2196F3
    /* цвета фона страницы */ #FFFFFF
   /* цвет текста */ #FFFFFF
- /*цвет основного текста */ #212121
- /* цвет вторичного тескта */ #757575
+ /*цвет основного текста */  #757575
+ /* цвет вторичного тескта */ #212121
  /* цвет слова мэйлаrgba */ rgba (255, 255, 255, 0.6)
  /* цвет фона нашей команы */ #F5F4FA
  /* цвет фона  чем мы занимаемся */ rgba(47, 48, 58, 0.8)
