@@ -3,7 +3,7 @@
     --title-text-color: #212121 ;
     --accent-color: #2196F3
 }
-.body {
+body {
 color: #757575
 background color: #FFFFFF ;
  }
@@ -12,6 +12,9 @@ background color: #FFFFFF ;
  }
  .logo-studio {
       color: #000000
+ }
+ .footer {
+     background-color:#2F303A ;
  }
  .site-nav .list {
      color: #212121
@@ -29,6 +32,10 @@ background color: #FFFFFF ;
 .features-list .title {
     color: #212121
 }
+.button {
+    background-color:#2196F3 ;
+    color: #FFFFFF
+}
   /*цвет Web */  #2196F3
    /* цвета фона страницы */ #FFFFFF
   /* цвет текста */ #FFFFFF
@@ -37,3 +44,4 @@ background color: #FFFFFF ;
  /* цвет слова мэйлаrgba */ rgba (255, 255, 255, 0.6)
  /* цвет фона нашей команы */ #F5F4FA
  /* цвет фона  чем мы занимаемся */ rgba(47, 48, 58, 0.8)
+/*цвет фона футера */ #2F303A
