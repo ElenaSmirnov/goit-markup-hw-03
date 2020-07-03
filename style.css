@@ -172,11 +172,8 @@ color: var(--primary-background-color)
 }
 .project-groups .button:hover,
 .project-groups .button:focus {
-    color:var(--primary-background-color)  ;
+    color:var(--primary-background-color) 
 }
- .button {
-     font-family: inherit
- }
 
   /*цвет Web */  #2196F3
    /* цвета фона страницы */ #FFFFFF
