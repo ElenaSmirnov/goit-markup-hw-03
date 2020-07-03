@@ -20,7 +20,8 @@ font-family: Roboto, sans-serif
     font-weight: bold;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
+    text-decoration: none
  }
  .logo-web {
      color:var(--accent-color) 
@@ -31,9 +32,10 @@ font-family: Roboto, sans-serif
  .site-nav-list .link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--title-text-color)
+    color: var(--title-text-color);
+    text-decoration: none
  }
  .site-nav-list .link:hover,
  .site-nav-list .link:focus {
@@ -42,9 +44,10 @@ font-family: Roboto, sans-serif
  .contacts .link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.14;
     letter-spacing: 0.02em ;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    text-decoration: none;
 }
  .contacts .link:hover,
  .contacts .link:focus{
@@ -65,7 +68,7 @@ font-family: Roboto, sans-serif
 .section-title {
     font-weight: bold;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
      color: var(--title-text-color)
@@ -73,21 +76,21 @@ font-family: Roboto, sans-serif
  .features-list .title {
     font-weight: bold;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
      color:var(--title-text-color)
  }
 .features-list .content {
     font-size: 14px;
-    line-height: 1.8;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color)
 }
 .activities-list .title {
     font-weight: bold;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -97,13 +100,13 @@ font-family: Roboto, sans-serif
 .command .member{
 font-weight: 500;
 font-size: 16px;
-line-height:1.2;
+line-height:1.19;
 letter-spacing: 0.03em;
 color: var(--title-text-color)
 }
 .command .member .specialty {
     font-size: 16px;
-    line-height:1.2;
+    line-height:1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color)
@@ -117,13 +120,13 @@ color: var(--title-text-color)
 }
 .projects-kind {
     font-size: 16px;
-    line-height:2;
+    line-height:1.9;
     letter-spacing: 0.03em;
     color: var(--primary-text-color)    
 }
 .projects-description {
 font-size: 18px;
-line-height:1.6;
+line-height:1.56;
 letter-spacing: 0.03em;
 color: var(--primary-background-color)
 }
@@ -135,25 +138,44 @@ color: var(--primary-background-color)
  }
 .footer-contacts .address{
     font-size: 14px;
-    line-height:1.8;
+    line-height:1.71;
     letter-spacing: 0.03em;
     color: var(--primary-background-color);
+    text-decoration: none;
 }
 .footer-contacts .link{
     font-size: 14px;
-    line-height:1.8;
+    line-height:1.71;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
+    text-decoration: none;
 }
 .button {
     font-weight: bold;
     font-size: 16px;
-    line-height:2;
+    line-height:1.63;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     background-color:var(--accent-color) ;
     color:var(--primary-background-color)
 }
- button {
-     font-family: inherit;
+.project-groups .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height:1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+
+}
+.project-groups .button:hover,
+.project-groups .button:focus {
+    color:var(--primary-background-color)  ;
+}
+ .button {
+     font-family: inherit
  }
 
   /*цвет Web */  #2196F3
