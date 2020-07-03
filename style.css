@@ -2,16 +2,21 @@
     --primary-text-color: #757575 ;
     --title-text-color: #212121 ;
     --accent-color: #2196F3 ;
-    --primary-background-color: #FFFFFF
+    --primary-background-color: #FFFFFF ;
+    --secondary-background-color: rgba(47, 48, 58, 0.8);
+    --secondary-accent-color: #188CE8;
+    --secondary-text-color: rgba(255, 255, 255, 0.6);
+    --footer-background: #2F303A;
+    --logo-color:#000000 ;
 }
 body {
 color:var(--primary-text-color) ;
-background color: var(--primary-background-color) ;
+background-color: var(--primary-background-color) ;
 font-family: Roboto, sans-serif
  }
- .logo:hover
- .logo:focus {
-     font-family: Raleway, sans-serif
+ .logo {
+    font-family: Raleway;
+    font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.2;
@@ -21,41 +26,136 @@ font-family: Roboto, sans-serif
      color:var(--accent-color) 
  }
  .logo-studio {
-      color: #000000 
+     color: var(--logo-color) 
  }
- button {
-     font-family: inherit;
- }
- .footer {
-     background-color:#2F303A 
- }
- .footer .logo-studio {
-     color: var(--primary-background-color) 
- }
- .site-nav .link {
-     color: var(--title-text-color)
+ .site-nav-list .link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--title-text-color)
  }
- .site-nav .link:hover,
- .site-nav .link:focus {
+ .site-nav-list .link:hover,
+ .site-nav-list .link:focus {
      color: var(--accent-color)
  }
- .section-title {
+ .contacts .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em ;
+    color: var(--primary-text-color)
+}
+ .contacts .link:hover,
+ .contacts .link:focus{
+    color: var(--accent-color)
+ }
+ .section-hero{
+     background-color: var(--secondary-background-color);
+ }
+ .title-hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-background-color);
+ }
+.section-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+     color: var(--title-text-color)
+ }
+ .features-list .title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
      color:var(--title-text-color)
  }
- .section {
-     color: var(--primary-text-color)
- }
-.features-list .title {
+.features-list .content {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)
+}
+.activities-list .title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-background-color)
+}
+.command .member{
+font-weight: 500;
+font-size: 16px;
+line-height:1.2;
+letter-spacing: 0.03em;
+color: var(--title-text-color)
+}
+.command .member .specialty {
+    font-size: 16px;
+    line-height:1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)
+}
+.projects-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height:2;
+    letter-spacing: 0.06em;
     color: var(--title-text-color)
 }
+.projects-kind {
+    font-size: 16px;
+    line-height:2;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)    
+}
+.projects-description {
+font-size: 18px;
+line-height:1.6;
+letter-spacing: 0.03em;
+color: var(--primary-background-color)
+}
+ .footer {
+     background-color: var(--footer-background) ;
+ }
+ .footer .logo-studio {
+     color: var(--primary-background-color) 
+ }
+.footer-contacts .address{
+    font-size: 14px;
+    line-height:1.8;
+    letter-spacing: 0.03em;
+    color: var(--primary-background-color);
+}
+.footer-contacts .link{
+    font-size: 14px;
+    line-height:1.8;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color)
+}
 .button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height:2;
     background-color:var(--accent-color) ;
     color:var(--primary-background-color)
 }
+ button {
+     font-family: inherit;
+ }
+
   /*цвет Web */  #2196F3
    /* цвета фона страницы */ #FFFFFF
   /* цвет текста */ #FFFFFF
