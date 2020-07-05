@@ -190,14 +190,17 @@ body {
   color: var(--primary-background-color);
 }
 .footer-contacts .address {
+  font-style: normal;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1, 71;
   letter-spacing: 0.03em;
   color: var(--primary-background-color);
+  text-decoration: none;
 }
 .footer-contacts .link {
+  font-style: normal;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1, 71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
