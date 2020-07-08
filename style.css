@@ -33,14 +33,23 @@ body {
   padding: 0;
   margin: 0;
 }
-.header {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 32px;
-}
 .section {
   padding-bottom: 94px;
 }
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -89,6 +98,13 @@ body {
   margin-top: 200px;
   margin-bottom: 200px;
 }
+.section-features {
+  padding: 0;
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .title-hero {
   margin: 0;
   padding: 0;
@@ -96,6 +112,7 @@ body {
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
+  align-items: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-background-color);
@@ -113,20 +130,28 @@ body {
   margin-bottom: 40px;
 }
 .section-hero .button {
-  padding: 0;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  display: block;
+  border-radius: 4px;
+  min-width: 136px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+
   color: var(--primary-background-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
+
 .section-hero .button:hover,
 .section-hero .button:focus {
   background-color: var(--secondary-accent-color);
@@ -161,6 +186,9 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.features-list {
+  display: flex;
 }
 .activities-list .title {
   font-weight: bold;
