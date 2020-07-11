@@ -18,6 +18,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 body {
   background-color: var(--primary-background-color);
@@ -31,8 +33,6 @@ body {
 }
 .list {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 h1,
 h2,
@@ -53,18 +53,36 @@ p {
   margin-right: auto;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
+.header-portfolio {
+  padding-bottom: 93px;
 }
-.header {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 32px;
-  padding-top: 32px;
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.container .portfolio {
+  padding-bottom: 93px;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+.contacts {
+  display: flex;
+}
+.contacts-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts-list .link {
+  display: flex;
+  margin-right: 10px;
+}
 .logo {
+  margin-right: 85px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -79,13 +97,26 @@ p {
 .logo-studio {
   color: var(--logo-color);
 }
+.site-nav-list {
+  display: flex;
+}
+
+.site-nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
 .site-nav-list .link {
+  padding-bottom: 32px;
+  padding-top: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   list-style: none;
-  outline: tomato;
 }
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
@@ -103,9 +134,6 @@ p {
   color: var(--accent-color);
 }
 .section-hero {
-  margin: 0;
-  padding: 0;
-
   background-color: var(--secondary-background-color);
   text-align: center;
   margin-right: 90px;
@@ -232,7 +260,6 @@ p {
   color: var(--primary-text-color);
 }
 .projects-title {
-  margin: 0;
   margin-bottom: 4px;
   margin-right: 24px;
   margin-left: 24px;
@@ -243,7 +270,6 @@ p {
   color: var(--title-text-color);
 }
 .projects-kind {
-  margin: 0;
   margin-bottom: 20px;
   margin-right: 24px;
   margin-left: 24px;
