@@ -27,13 +27,21 @@ body {
   font-size: 14px;
   color: var(--primary-text-color);
 }
+
 .link {
   text-decoration: none;
   display: block;
 }
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
 .list {
   list-style: none;
 }
+
 h1,
 h2,
 h3,
@@ -42,6 +50,7 @@ p {
   margin: 0;
   padding: 0;
 }
+
 .section {
   padding-bottom: 94px;
 }
@@ -56,6 +65,7 @@ p {
 .header-portfolio {
   padding-bottom: 93px;
 }
+
 .header .container {
   display: flex;
   align-items: center;
@@ -162,6 +172,18 @@ p {
   color: var(--primary-background-color);
   margin-bottom: 30px;
 }
+
+.filter-groups {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter-groups-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .section-title {
   margin: 0;
   padding: 0;
@@ -201,17 +223,30 @@ p {
 .section-hero .button:focus {
   background-color: var(--secondary-accent-color);
 }
+
 .filter-groups .button {
+  display: block;
+  border-radius: 4px;
+  min-width: 136px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  align-items: center;
+  text-align: center;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  display: flex;
-  align-items: center;
-  text-align: center;
+
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--accent-color);
+  box-shadow: rgba(0, 0, 0, 0.25);
+  border-color: var(--primary-background-color);
 }
 .filter-groups .button:hover,
 .filter-groups .button:focus {
@@ -235,6 +270,11 @@ p {
 .features-list {
   display: flex;
 }
+
+.activities-list {
+  display: flex;
+  align-items: center;
+}
 .activities-list .title {
   font-weight: bold;
   font-size: 14px;
@@ -244,6 +284,11 @@ p {
   text-transform: uppercase;
   background-color: var(--secondary-background-color);
   color: var(--primary-background-color);
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
 }
 .team-list .member {
   font-weight: 500;
@@ -258,6 +303,11 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.clients {
+  display: flex;
+  align-items: center;
 }
 .projects-title {
   margin-bottom: 4px;
