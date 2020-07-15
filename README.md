@@ -1,2 +1,2 @@
-# goit-markup-hw-02
-CSS ДЗ №2
+# goit-markup-hw-03
+CSS ДЗ №3
