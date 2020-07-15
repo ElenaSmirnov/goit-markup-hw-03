@@ -39,29 +39,35 @@ body {
   padding: 0;
 }
 
-.image {
+img {
   display: block;
-  margin: 0;
-  padding: 0;
+  max-width: 100%;
+  height: auto;
 }
-/*h1,
+h1,
 h2,
 h3,
 h4,
 p {
   margin: 0;
   padding: 0;
-}*/
+}
 
 .section {
   padding-bottom: 94px;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
 }
 
 .header-portfolio {
@@ -276,12 +282,17 @@ p {
 }
 
 .features-image {
+  margin-bottom: 30px;
+}
+
+.features-list-item-link {
   display: flex;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  justify-content: center;
   align-items: center;
   background: var(--secondary-white-color);
-  border-radius: 4px;
-  margin-bottom: 30px;
-  justify-content: center;
 }
 
 .features-list-item:not(:last-child) {
@@ -311,16 +322,24 @@ p {
   margin-right: 30px;
 }
 
+.activities-list-title {
+  display: flex;
+  width: 370px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
 .team-list {
   display: flex;
   align-items: center;
 }
 
 .team-list-item-image {
-  display: block;
   margin-bottom: 30px;
 }
 .team-list .member {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -337,10 +356,12 @@ p {
 }
 
 .specialty {
+  text-align: center;
   margin-bottom: 16px;
 }
 .team-list-item {
   margin-right: 30px;
+  width: calc((100%-90px) / 4);
 }
 
 .team-list-item:nth-child(4n) {
@@ -355,7 +376,10 @@ p {
 }
 
 .social-list-item {
+  width: 44px;
+  height: 44px;
   margin-right: 10px;
+  align-items: center;
 }
 
 .social-list-item:nth-child(4n) {
@@ -370,8 +394,19 @@ p {
   margin-right: 30px;
 }
 
-..clients-item:nth-child(6n) {
+.clients-item:nth-child(6n) {
   margin-right: 0;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects-title {
@@ -414,26 +449,19 @@ p {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
 }
-.container .projects {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
 
+.projects-flex-element-image {
+  display: block;
+}
 .projects-flex-element {
   border: 1px solid #eeeeee;
-  box-sizing: border-box;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
-  /*width: 370px;*/
-  width: calc((100%-60px) / 3);
+  width: 370px;
+  /*width: calc((100%-60px) / 3);*/
   margin-right: 30px;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 .projects-flex-element:nth-child(3n) {
   margin-right: 0;
@@ -442,12 +470,43 @@ p {
 .projects-flex-element:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.footer {
-  background-color: var(--footer-background);
+
+.card-content {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  border-bottom-right-radius: 5px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.footer .logo-studio {
+
+.footer-section .container {
+  display: flex;
+}
+.footer-section {
+  background-color: var(--footer-background);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.footer-section .logo-studio {
   color: var(--primary-background-color);
 }
+
+.footer-section .logo {
+  margin-bottom: 20px;
+}
+
+.footer-section .element {
+  display: flex;
+  margin-bottom: 9px;
+}
+
+.footer-section .element:nth-child(3n) {
+  margin-bottom: 0;
+}
+
 .footer-contacts .address {
   font-style: normal;
   font-size: 14px;
@@ -462,4 +521,21 @@ p {
   line-height: 1, 71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.footer-content {
+  align-items: baseline;
+  justify-content: space-between;
+  margin-right: 69px;
+}
+
+.subscribe-list {
+  display: flex;
+}
+
+.subscribe-title {
+  margin-bottom: 20px;
+}
+.footer-contacts {
+  padding-top: 20px;
 }
