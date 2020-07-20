@@ -163,7 +163,8 @@ p {
   color: var(--accent-color);
 }
 .section-hero {
-  background-color: var(--secondary-background-color);
+  /*background-color: var(--secondary-background-color);*/
+
   text-align: center;
   margin-right: 90px;
   margin-left: 90px;
@@ -185,11 +186,11 @@ p {
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
-  align-items: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 30px;
+  padding-top: 200px;
 }
 
 .filter-groups {
@@ -216,11 +217,9 @@ p {
   margin-bottom: 50px;
 }
 .section-hero .button {
-  display: block;
+  display: inline-block;
   border-radius: 4px;
   min-width: 136px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
@@ -233,14 +232,26 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
 .section-hero .button:hover,
 .section-hero .button:focus {
   background-color: var(--secondary-accent-color);
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header-img.jpg);
+  background-repeat: no-repeat;
 }
 
 .filter-groups .button {
@@ -290,6 +301,21 @@ p {
   display: flex;
   align-items: center;
 }
+
+/*.features-list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-white-color);
+  background-image: url(../images/antenna.png);
+}
+
+.features-list-item:nth-child(1)::before {
+  background-image: url(../images/antenna.png);
+}*/
 
 .features-image {
   margin-bottom: 30px;
@@ -406,6 +432,10 @@ p {
 
 .clients-item {
   margin-right: 30px;
+}
+
+.clients-section {
+  padding-top: 94px;
 }
 
 .clients-item:nth-child(6n) {
