@@ -34,7 +34,7 @@ body {
 
 .link {
   text-decoration: none;
-  display: block;
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -110,6 +110,7 @@ p {
   display: flex;
   margin-right: 10px;
 }
+
 .logo {
   margin-right: 85px;
   font-family: Raleway;
@@ -317,7 +318,7 @@ p {
   background-image: url(../images/antenna.png);
 }*/
 
-.features-image {
+.features-list-item-icon {
   margin-bottom: 30px;
 }
 
@@ -373,9 +374,11 @@ p {
   padding-top: 94px;
   background-color: #f5f4fa;
 }
+
 .team-list-item-image {
   margin-bottom: 30px;
 }
+
 .team-list .member {
   text-align: center;
   margin-bottom: 10px;
@@ -385,6 +388,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
 .team-list .member .specialty {
   font-size: 16px;
   line-height: 1.19;
@@ -411,20 +415,40 @@ p {
 .social-list {
   display: flex;
   padding-bottom: 24px;
-  padding-right: 32px;
-  padding-left: 32px;
   justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-list-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-list-item:nth-child(4n) {
   margin-right: 0;
 }
+
+.social-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+}
+
+.social-list-item-link:hover,
+.social-list-item-icon,
+.social-list-item-link:focus,
+.social-list-item-icon {
+  fill: var(--accent-color);
+  letter: var(--primary-white-color);
+}
+
 .clients {
   display: flex;
   align-items: center;
@@ -490,6 +514,7 @@ p {
   color: var(--title-text-color);
   background-color: #f5f4fa;
 }
+
 .filter-groups .button:hover,
 .filter-groups .button:focus {
   color: var(--primary-white-color);
