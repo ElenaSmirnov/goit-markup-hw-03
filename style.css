@@ -305,37 +305,20 @@ p {
   align-items: center;
 }
 
-/*.features-list-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--secondary-white-color);
-  background-image: url(../images/antenna.png);
-}
-
-.features-list-item:nth-child(1)::before {
-  background-image: url(../images/antenna.png);
-}*/
-
-.features-list-item-icon {
-  margin-bottom: 30px;
-}
-
 .features-list-item-link {
   display: flex;
   width: 270px;
   height: 120px;
-  border-radius: 4px;
+  background-color: #f5f4fa;
   justify-content: center;
   align-items: center;
-  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
-
-.features-list-item {
-  background-size: contain;
+.features-list-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .features-list-item:not(:last-child) {
   margin-right: 30px;
@@ -426,6 +409,10 @@ p {
 }
 
 .social-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
   margin-right: 10px;
@@ -435,13 +422,11 @@ p {
   /* width: 44px;
   height: 44px;*/
   /*margin-right: 10px;*/
-  justify-content: center;
-  align-items: center;
   fill: #afb1b8;
 }
 
-.social-list-item-icon:hover,
-.social-list-item-icon:focus {
+.social-list-item:hover,
+.social-list-item:focus {
   background-color: var(--accent-color);
 }
 .social-list-item:nth-child(4n) {
@@ -459,6 +444,18 @@ p {
 .social-list-item-link:hover,
 .social-list-item-link:focus {
   fill: var(--primary-white-color);
+}
+
+.subscribe-list .social-list-item {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.subscribe-list .social-list-item:hover,
+.subscribe-list .social-list-item:focus {
+  background-color: var(--accent-color);
 }
 
 .clients {
